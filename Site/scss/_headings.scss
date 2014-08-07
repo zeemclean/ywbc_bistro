@@ -12,6 +12,13 @@ h1 {
 	@include respond($tablet) {
 		text-align: left;
 	}
+
+	&.menu {
+		font-family:$slab;
+		text-align: left;
+		color:#666;
+		line-height: .5em;
+	}
 }
 
 h2 {
@@ -22,6 +29,12 @@ h2 {
 
 	@include respond($tablet){
 		text-align: left;
+	}
+
+	&.menu {
+		color: #666;
+		text-align: left;
+		line-height: .1em;
 	}
 
 }
@@ -37,12 +50,30 @@ h3{
 	text-align: center;
 	margin-top: 0;
 }
+h4 {
+	color: $ash;
+	font-family: $slab;
+	text-align: center;
+	font-weight:400;
+
+}
 h5 {
 	font-family: $sans;
 	font-size: 1.2em;
 	font-weight: 600;
 	color: $ash;
 	text-align: center;
+
+	@include respond($tablet){
+		text-align: left;
+	}
+
+	&.menu {
+		font-family:$slab;
+		color: #666;
+		font-weight: 400;
+		text-align: left;
+	}
 
 	
 }
@@ -56,8 +87,22 @@ p {
 	font-weight: 400;
 	text-align:center;
 	color: $ash;
+	font-size: 1em;
 
 	@include respond($tablet) {
 		text-align: left;
+	}
+
+	&.menu {
+		text-align: left;
+		color: #666;
+	}
+	&.quote {
+		font-family: $slab;
+		font-size: 1.2em;
+	}
+	&.cite {
+		text-align: right;
+		font-family: $belle;
 	}
 }

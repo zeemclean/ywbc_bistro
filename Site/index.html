@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Yellow Rabbit : Bistro & Lounge Bar</title>
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
@@ -13,47 +14,253 @@
 <header>
 	<div class="row pattern_body">
 		<div class="logo_container col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5">
-			<img class="header_logo img-responsive" src="assets/yr_logo_desktop.png" alt="">
+			<a data-toggle="collapse" data-parent="#accordian" href="#home">
+				<img class="header_logo img-responsive" src="assets/yr_logo_desktop.png" alt="">
+			</a>
 		</div>
 	</div>
 	<div class="row tab_divider nav_container">
 		<div class="col-xs-2 col-md-3 tab_border"></div>
 		<div class="center_tab col-xs-8 col-md-6">
-			<h3 class="">Bistro & lounge</h3>
-			<nav id="tab_nav">
-				<div class="nav_item col-xs-12 col-md-2"><a href="#home">Home</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a href="#menu">Menu</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a href="#events">Events</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a href="#about">About</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a href="#contact">Contact</a></div>
+			<h3 class="hidden-md hidden-lg">Bistro & lounge</h3>
+			<nav id="tab_nav" class="hidden-sm hidden-xs">
+				<div class="nav_item col-xs-12 col-md-2"><a data-toggle="collapse" data-parent="#accordian" href="#home">Home</a></div>
+				<div class="nav_item col-xs-12 col-md-2"><a data-toggle="collapse" data-parent="#accordian" href="#menu">Menu</a></div>
+				<div class="nav_item col-xs-12 col-md-2"><a data-toggle="collapse" data-parent="#accordian" href="#events">Events</a></div>
+				<div class="nav_item col-xs-12 col-md-2"><a data-toggle="collapse" data-parent="#accordian" href="#about">About</a></div>
+				<div class="nav_item col-xs-12 col-md-2"><a data-toggle="collapse" data-parent="#accordian" href="#contact">Contact</a></div>
 			</nav>
 		</div>
 		<div class="col-xs-2 col-md-3 tab_border"></div>
 	</div>
 </header>
-<div class="container">
-	<div class="row">
-		<div class="col-xs-6 col-xs-offset-3 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2" id="hometab">
+<div class="container panel-group" id="accordian">
+
+	<div class="row panel-collapse collapse in" id="home">
+		<div class="col-xs-6 col-xs-offset-3 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2 panel-body" >
 
 					<h1 class="light">Welcome</h1>
 					<p class="welcome light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 					 Eius accusantium deserunt iure minima optio sequi vero, dignissimos sunt temporibus voluptatibus.
 					  Illo atque recusandae corrupti voluptatum culpa, incidunt debitis adipisci deserunt.</p>
-					<h2>Hours<h2>
-					<h5>Tuesday - Thursday</h5>
-					<p>5:00 pm - 11:00pm</p>
-					<h5>Friday - Sunday</h5>
-					<p>4:30 pm - Late</p>
-					<h5>Monday</h5>
-					<p>Closed</p>
+					<div id="contacthours">
+						<h2>Hours</h2>
+						<h5>Tuesday - Thursday</h5>
+						<p>5:00 pm - 11:00pm</p>
+						<h5>Friday - Sunday</h5>
+						<p>4:30 pm - Late</p>
+						<h5>Monday</h5>
+						<p>Closed</p>
 
+						<h2>Contact</h2>
+						<h5>Phone : (04) 555 8469</h5>
+						<p>Address : 57 Calgary Street, 
+							Te Aro, Wellington.</p>
+					</div>
 		</div>
 	</div>
+
 	<div class="row tab_divider">
-		<div class="col-xs-2 col-md3 tab_border"></div>
-		<div class="col-xs-8 col-md-6 center_tab"><h3>home</h3></div>
-		<div class="col-xs-2 col-md3 tab_border"></div>
+		<div class="col-xs-2 col-md-3 tab_border"></div>
+		<div class="col-xs-8 col-md-6 center_tab"><a data-toggle="collapse" data-parent="#accordian" href="#home"><h3>home</h3></a></div>
+		<div class="col-xs-2 col-md-3  tab_border"></div>
 	</div>
+
+	<div class="row panel-collapse collapse" id="menu">
+		<div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2 paper  panel-body" >
+			<div class="row">
+				<a class="menu_sublinks food_tab" href="#food">
+					<div class="col-xs-6 col-md-3 col-md-offset-3 center_tab menu">
+						<h4>Food</h4>
+					</div>
+				</a>
+				<a class="menu_sublinks drink_tab" href="#drink">
+					<div class="col-xs-6 col-md-3 center_tab menu">
+						<h4>Drink</h4>
+					</div>
+				</a>
+			</div>
+			<div class="submenu" id="drink">
+				<div class="col-xs-12">
+
+					<h1 class="menu">Drinks<h1>
+					<h2 class="menu">Cocktails</h2>
+					
+					<div class="row">
+						
+						<div class="col-xs-10">
+							<h5 class="menu">French 75"</h5>
+							<p class="menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							 Corporis ullam voluptatibus quia nobis assumenda totam.</p>
+						</div>
+						
+						<div class="col-xs-2">
+							<h5 class="menu">12</h5>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-10">
+							<h5 class="menu">Apricot Mule</h5>
+							<p class="menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							 Dolorum maxime iste aliquam odio nemo tempora alias!</p>
+						</div>
+						<div class="col-xs-2">
+							<h5 class="menu">13</h5>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-10">
+							<h5 class="menu">Cotton-tail</h5>
+							<p class="menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum, et.</p>
+						</div>
+						<div class="col-xs-2">
+							<h5 class="menu">14</h5>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-10">
+							<h5 class="menu">Long Island Iced Tea</h5>
+							<p class="menu">Lorem ipsum dolor sit amet, 
+							consectetur adipisicing elit. Eveniet dignissimos deserunt harum, 
+							dolore at doloremque possimus.</p>
+						</div>
+						<div class="col-xs-2">
+							<h5 class="menu">14</h5>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-10">
+							<h5 class="menu">Martini Scorsese</h5>
+							<p class="menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Nemo perferendis debitis ut sapiente, maxime obcaecati!</p>
+						</div>
+						<div class="col-xs-2">
+							<h5 class="menu">14</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="submenu" id="food">
+				<div class="col-xs-12">
+
+					<h1 class="menu">Food<h1>
+					<h2 class="menu">Entre</h2>
+					
+					<div class="row">
+						
+						<div class="col-xs-10">
+							<h5 class="menu">French Onion Soup"</h5>
+							<p class="menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							 Corporis ullam voluptatibus quia nobis assumenda totam.</p>
+						</div>
+						
+						<div class="col-xs-2">
+							<h5 class="menu">12</h5>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-10">
+							<h5 class="menu">Platter</h5>
+							<p class="menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							 Dolorum maxime iste aliquam odio nemo tempora alias!</p>
+						</div>
+						<div class="col-xs-2">
+							<h5 class="menu">13</h5>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-10">
+							<h5 class="menu">Things</h5>
+							<p class="menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum, et.</p>
+						</div>
+						<div class="col-xs-2">
+							<h5 class="menu">14</h5>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-10">
+							<h5 class="menu">Stuff</h5>
+							<p class="menu">Lorem ipsum dolor sit amet, 
+							consectetur adipisicing elit. Eveniet dignissimos deserunt harum, 
+							dolore at doloremque possimus.</p>
+						</div>
+						<div class="col-xs-2">
+							<h5 class="menu">14</h5>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-10">
+							<h5 class="menu">Martin Scorsese</h5>
+							<p class="menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Nemo perferendis debitis ut sapiente, maxime obcaecati!</p>
+						</div>
+						<div class="col-xs-2">
+							<h5 class="menu">14</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div class="row tab_divider">
+		<div class="col-xs-2 col-md-3 tab_border"></div>
+		<div class="col-xs-8 col-md-6  center_tab">
+			<a data-toggle="collapse" data-parent="#accordian" href="#menu">
+				<h3>menu</h3>
+			</a>
+		</div>
+		<div class="col-xs-2 col-md-3  tab_border"></div>
+	</div>
+
+	<div class="row panel-collapse collapse" id="about">
+		<div class="col-xs-12 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2 panel-body" >
+
+					<h1 class="light">About</h1>
+					<div class="row ">
+						<div class="col-xs-1 col-xs-offset-2"></div>
+						<div class="col-xs-6 borderquote">
+							<p class="quote">One cannot think well, love well, sleep well, if one has not dined well.</p>
+							<p class="cite">Virginia Woolf</p>
+						</div>
+						<div class="col-xs-1 "></div>
+					</div>
+
+				
+					<div class="col-xs-8 col-xs-offset-2">
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						 Perferendis unde voluptatum facilis iste ab temporibus minima
+						  quia iure, quae rem ea distinctio excepturi, assumenda!
+						   Consectetur accusantium dolor quisquam cumque a?</p>
+
+						<h2>But who is Yellow Rabbit?</h2>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						 Commodi provident quasi dolorem ea, vitae rem, iure asperi
+						 ores aut explicabo magnam esse quia minima eos dolores dele
+						 niti a accusantium, harum omnis.</p>
+					</div>
+		</div>
+	</div>
+
+	<div class="row tab_divider">
+		<div class="col-xs-2 col-md-3 tab_border"></div>
+		<div class="col-xs-8 col-md-6  center_tab">
+			<a data-toggle="collapse" data-parent="#accordian" href="#about">
+				<h3>about</h3>
+			</a>
+		</div>
+		<div class="col-xs-2 col-md-3  tab_border"></div>
+	</div>
+	
 </div>
 	
 </body>

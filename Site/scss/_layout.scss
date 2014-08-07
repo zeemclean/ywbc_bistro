@@ -4,10 +4,10 @@
 body {
 	@include bgpattern($escher);
 	// border-bottom: 0.2em solid $rabbit;
+
 }
 .tab_divider {
 	margin-top: 2em;
-	@include clearfix;
 }
 
 .center_tab {
@@ -18,9 +18,31 @@ body {
 	margin: none;
 	box-shadow: 0em 0.5em 0.5em #222;
 
+	&.menu {
+		@include bgpattern($escher);
+		border-radius:0em 0em .5em .5em;
+		z-index: 5;
+	}
+
 }
 .tab_border {
 	border-top: 0.2em solid $rabbit;
 	box-shadow: 0em 0.5em 0.5em #222;
 	padding-top: 0;
+}
+.paper{
+	@include bgpattern($paper);
+}
+div.submenu {
+	max-height:500px;
+	overflow: scroll;
+}
+#drink {
+	display: none;
+}
+
+div.borderquote {
+	border-left:0.2em solid $rabbit;
+	border-right:0.2em solid $rabbit;
+	margin-bottom: 3em;
 }
