@@ -1,0 +1,46 @@
+
+
+
+header {
+
+	
+}
+
+.logo_container {
+	padding-top: 3em;
+	@include bgpattern($escher);
+}
+
+.header_logo {
+  	width:100%;
+  	height:100%;
+}
+
+
+
+#tab_nav {
+	display: none;
+	margin: auto;
+
+	@include respond($desktop){
+		display:inline-block;
+			float: left;
+	}
+}
+
+
+
+a {
+	color: inherit;
+	text-transform: uppercase;
+}
+
+.nav_item {
+	text-align: center;
+	padding: 1em;
+	font-family: $sans;
+	color: $rabbit;
+
+
+
+}

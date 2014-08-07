@@ -1,0 +1,26 @@
+
+
+
+body {
+	@include bgpattern($escher);
+	// border-bottom: 0.2em solid $rabbit;
+}
+.tab_divider {
+	margin-top: 2em;
+	@include clearfix;
+}
+
+.center_tab {
+	border: 0.2em solid $rabbit;
+	border-top: none;
+	z-index:10;
+	padding: none;
+	margin: none;
+	box-shadow: 0em 0.5em 0.5em #222;
+
+}
+.tab_border {
+	border-top: 0.2em solid $rabbit;
+	box-shadow: 0em 0.5em 0.5em #222;
+	padding-top: 0;
+}

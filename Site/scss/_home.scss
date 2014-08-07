@@ -1,0 +1,7 @@
+.welcome {
+	display: none;
+
+	@include respond($tablet) {
+		display: block;
+	}
+}

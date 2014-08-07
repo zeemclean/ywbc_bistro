@@ -1,0 +1,63 @@
+
+
+
+h1 {
+	font-family: $sans;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	text-align: center;
+
+	@include respond($tablet) {
+		text-align: left;
+	}
+}
+
+h2 {
+	font-family: $belle;
+	color: $rabbit;
+	font-size: 1.5em;
+	text-align: center;
+
+	@include respond($tablet){
+		text-align: left;
+	}
+
+}
+
+
+h3{
+	font-family: $sans;
+	font-size: 1.2em;
+	color: $rabbit;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin-top: 0;
+}
+h5 {
+	font-family: $sans;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: $ash;
+	text-align: center;
+
+	
+}
+
+.light {
+	color: $ash;
+}
+
+p {
+	font-family: $sans;
+	font-weight: 400;
+	text-align:center;
+	color: $ash;
+
+	@include respond($tablet) {
+		text-align: left;
+	}
+}

@@ -1,0 +1,19 @@
+@mixin bgpattern($pattern) {
+	background: $pattern;
+}
+
+
+@mixin respond($breakpoint) {
+	@media screen and (min-width : $breakpoint) {
+		@content;
+	}
+}
+
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

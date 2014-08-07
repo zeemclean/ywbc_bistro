@@ -1,0 +1,153 @@
+@import url(http://fonts.googleapis.com/css?family=La+Belle+Aurore|Josefin+Sans:400,600,700|Josefin+Slab:400,700);
+/* line 4, ../scss/_headings.scss */
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  /* line 4, ../scss/_headings.scss */
+  h1 {
+    text-align: left;
+  }
+}
+
+/* line 17, ../scss/_headings.scss */
+h2 {
+  font-family: "La Belle Aurore", cursive;
+  color: #ffae00;
+  font-size: 1.5em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  /* line 17, ../scss/_headings.scss */
+  h2 {
+    text-align: left;
+  }
+}
+
+/* line 30, ../scss/_headings.scss */
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2em;
+  color: #ffae00;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* line 40, ../scss/_headings.scss */
+h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #d9d9d9;
+  text-align: center;
+}
+
+/* line 50, ../scss/_headings.scss */
+.light {
+  color: #d9d9d9;
+}
+
+/* line 54, ../scss/_headings.scss */
+p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #d9d9d9;
+}
+@media screen and (min-width: 768px) {
+  /* line 54, ../scss/_headings.scss */
+  p {
+    text-align: left;
+  }
+}
+
+/* line 4, ../scss/_layout.scss */
+body {
+  background: url("../assets/escheresque_ste.png") repeat;
+}
+
+/* line 8, ../scss/_layout.scss */
+.tab_divider {
+  margin-top: 2em;
+}
+/* line 14, ../scss/_mixins.scss */
+.tab_divider:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 13, ../scss/_layout.scss */
+.center_tab {
+  border: 0.2em solid #ffae00;
+  border-top: none;
+  z-index: 10;
+  padding: none;
+  margin: none;
+  box-shadow: 0em 0.5em 0.5em #222;
+}
+
+/* line 22, ../scss/_layout.scss */
+.tab_border {
+  border-top: 0.2em solid #ffae00;
+  box-shadow: 0em 0.5em 0.5em #222;
+  padding-top: 0;
+}
+
+/* line 9, ../scss/_nav.scss */
+.logo_container {
+  padding-top: 3em;
+  background: url("../assets/escheresque_ste.png") repeat;
+}
+
+/* line 14, ../scss/_nav.scss */
+.header_logo {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 21, ../scss/_nav.scss */
+#tab_nav {
+  display: none;
+  margin: auto;
+}
+@media screen and (min-width: 992px) {
+  /* line 21, ../scss/_nav.scss */
+  #tab_nav {
+    display: inline-block;
+    float: left;
+  }
+}
+
+/* line 33, ../scss/_nav.scss */
+a {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+/* line 38, ../scss/_nav.scss */
+.nav_item {
+  text-align: center;
+  padding: 1em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffae00;
+}
+
+/* line 1, ../scss/_home.scss */
+.welcome {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  /* line 1, ../scss/_home.scss */
+  .welcome {
+    display: block;
+  }
+}
