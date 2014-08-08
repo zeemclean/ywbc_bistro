@@ -45,11 +45,17 @@ h3{
 	font-size: 1.2em;
 	color: $rabbit;
 	text-transform: uppercase;
+	text-decoration:none;
 	font-weight: 600;
 	letter-spacing: 0.2em;
 	text-align: center;
 	margin-top: 0;
+	
+
+
 }
+
+
 h4 {
 	color: $ash;
 	font-family: $slab;
@@ -106,3 +112,8 @@ p {
 		font-family: $belle;
 	}
 }
+
+a.content-anchor {
+	text-decoration: none;
+}
+

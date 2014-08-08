@@ -48,13 +48,14 @@ h3 {
   font-size: 1.2em;
   color: #ffae00;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-align: center;
   margin-top: 0;
 }
 
-/* line 53, ../scss/_headings.scss */
+/* line 59, ../scss/_headings.scss */
 h4 {
   color: #d9d9d9;
   font-family: "Josefin Slab", serif;
@@ -62,7 +63,7 @@ h4 {
   font-weight: 400;
 }
 
-/* line 60, ../scss/_headings.scss */
+/* line 66, ../scss/_headings.scss */
 h5 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.2em;
@@ -71,12 +72,12 @@ h5 {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  /* line 60, ../scss/_headings.scss */
+  /* line 66, ../scss/_headings.scss */
   h5 {
     text-align: left;
   }
 }
-/* line 71, ../scss/_headings.scss */
+/* line 77, ../scss/_headings.scss */
 h5.menu {
   font-family: "Josefin Slab", serif;
   color: #666;
@@ -84,12 +85,12 @@ h5.menu {
   text-align: left;
 }
 
-/* line 81, ../scss/_headings.scss */
+/* line 87, ../scss/_headings.scss */
 .light {
   color: #d9d9d9;
 }
 
-/* line 85, ../scss/_headings.scss */
+/* line 91, ../scss/_headings.scss */
 p {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -98,25 +99,30 @@ p {
   font-size: 1em;
 }
 @media screen and (min-width: 768px) {
-  /* line 85, ../scss/_headings.scss */
+  /* line 91, ../scss/_headings.scss */
   p {
     text-align: left;
   }
 }
-/* line 96, ../scss/_headings.scss */
+/* line 102, ../scss/_headings.scss */
 p.menu {
   text-align: left;
   color: #666;
 }
-/* line 100, ../scss/_headings.scss */
+/* line 106, ../scss/_headings.scss */
 p.quote {
   font-family: "Josefin Slab", serif;
   font-size: 1.2em;
 }
-/* line 104, ../scss/_headings.scss */
+/* line 110, ../scss/_headings.scss */
 p.cite {
   text-align: right;
   font-family: "La Belle Aurore", cursive;
+}
+
+/* line 116, ../scss/_headings.scss */
+a.content-anchor {
+  text-decoration: none;
 }
 
 /* line 4, ../scss/_layout.scss */
@@ -163,16 +169,36 @@ div.submenu {
   overflow: scroll;
 }
 
-/* line 40, ../scss/_layout.scss */
-#drink {
+/* line 41, ../scss/_layout.scss */
+.submenu {
   display: none;
 }
 
-/* line 44, ../scss/_layout.scss */
+/* line 46, ../scss/_layout.scss */
+.content-section {
+  display: none;
+}
+
+/* line 52, ../scss/_layout.scss */
 div.borderquote {
   border-left: 0.2em solid #ffae00;
   border-right: 0.2em solid #ffae00;
   margin-bottom: 3em;
+}
+
+/* line 58, ../scss/_layout.scss */
+a h3 {
+  -webkit-transition: all 2s ease-in-out 0;
+  -moz-transition: all 2s ease-in-out 0;
+  -o-transition: all 2s ease-in-out 0;
+  -ms-transition: all 2s ease-in-out 0;
+  transition: all 2s ease-in-out 0;
+}
+/* line 61, ../scss/_layout.scss */
+a h3:hover {
+  color: #d9d9d9;
+  letter-spacing: 0.5em;
+  border-color: #d9d9d9;
 }
 
 /* line 9, ../scss/_nav.scss */

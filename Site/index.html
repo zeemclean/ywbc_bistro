@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Yellow Rabbit : Bistro & Lounge Bar</title>
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
@@ -12,9 +11,9 @@
 <body>
 
 <header>
-	<div class="row pattern_body">
+	<div class="row">
 		<div class="logo_container col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5">
-			<a data-toggle="collapse" data-parent="#accordian" href="#home">
+			<a href="#home">
 				<img class="header_logo img-responsive" src="assets/yr_logo_desktop.png" alt="">
 			</a>
 		</div>
@@ -24,20 +23,20 @@
 		<div class="center_tab col-xs-8 col-md-6">
 			<h3 class="hidden-md hidden-lg">Bistro & lounge</h3>
 			<nav id="tab_nav" class="hidden-sm hidden-xs">
-				<div class="nav_item col-xs-12 col-md-2"><a data-toggle="collapse" data-parent="#accordian" href="#home">Home</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a data-toggle="collapse" data-parent="#accordian" href="#menu">Menu</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a data-toggle="collapse" data-parent="#accordian" href="#events">Events</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a data-toggle="collapse" data-parent="#accordian" href="#about">About</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a data-toggle="collapse" data-parent="#accordian" href="#contact">Contact</a></div>
+				<div class="nav_item col-xs-12 col-md-2"><a class="content-anchor" href="#home">Home</a></div>
+				<div class="nav_item col-xs-12 col-md-2"><a class="content-anchor" href="#menu">Menu</a></div>
+				<div class="nav_item col-xs-12 col-md-2"><a class="content-anchor" href="#events">Events</a></div>
+				<div class="nav_item col-xs-12 col-md-2"><a class="content-anchor" href="#about">About</a></div>
+				<div class="nav_item col-xs-12 col-md-2"><a class="content-anchor" href="#contact">Contact</a></div>
 			</nav>
 		</div>
 		<div class="col-xs-2 col-md-3 tab_border"></div>
 	</div>
 </header>
-<div class="container panel-group" id="accordian">
+<div class="container" >
 
-	<div class="row panel-collapse collapse in" id="home">
-		<div class="col-xs-6 col-xs-offset-3 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2 panel-body" >
+	<div class="row content-section" id="home">
+		<div class="col-xs-6 col-xs-offset-3 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2 " >
 
 					<h1 class="light">Welcome</h1>
 					<p class="welcome light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -62,20 +61,20 @@
 
 	<div class="row tab_divider">
 		<div class="col-xs-2 col-md-3 tab_border"></div>
-		<div class="col-xs-8 col-md-6 center_tab"><a data-toggle="collapse" data-parent="#accordian" href="#home"><h3>home</h3></a></div>
+		<div class="col-xs-8 col-md-6 center_tab"><a href="#home" class="content-anchor"><h3>home</h3></a></div>
 		<div class="col-xs-2 col-md-3  tab_border"></div>
 	</div>
 
-	<div class="row panel-collapse collapse" id="menu">
-		<div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2 paper  panel-body" >
-			<div class="row">
-				<a class="menu_sublinks food_tab" href="#food">
-					<div class="col-xs-6 col-md-3 col-md-offset-3 center_tab menu">
+	<div class="row content-section" id="menu">
+		<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 div col-lg-6 col-lg-offset-3 paper" >
+			<div class="row" id="subtabs">
+				<a class="menu_sublink food_tab" href="#food">
+					<div class="col-xs-6 col-md-6 center_tab menu">
 						<h4>Food</h4>
 					</div>
 				</a>
-				<a class="menu_sublinks drink_tab" href="#drink">
-					<div class="col-xs-6 col-md-3 center_tab menu">
+				<a class="menu_sublink drink_tab" href="#drink">
+					<div class="col-xs-6 col-md-6 center_tab menu">
 						<h4>Drink</h4>
 					</div>
 				</a>
@@ -83,7 +82,7 @@
 			<div class="submenu" id="drink">
 				<div class="col-xs-12">
 
-					<h1 class="menu">Drinks<h1>
+					<h1 class="menu">Drinks</h1>
 					<h2 class="menu">Cocktails</h2>
 					
 					<div class="row">
@@ -147,7 +146,7 @@
 			<div class="submenu" id="food">
 				<div class="col-xs-12">
 
-					<h1 class="menu">Food<h1>
+					<h1 class="menu">Food</h1>
 					<h2 class="menu">Entre</h2>
 					
 					<div class="row">
@@ -208,20 +207,21 @@
 					</div>
 				</div>
 			</div>
+		</div>
 	</div>
 
 	<div class="row tab_divider">
 		<div class="col-xs-2 col-md-3 tab_border"></div>
 		<div class="col-xs-8 col-md-6  center_tab">
-			<a data-toggle="collapse" data-parent="#accordian" href="#menu">
+			<a href="#menu" class="content-anchor">
 				<h3>menu</h3>
 			</a>
 		</div>
 		<div class="col-xs-2 col-md-3  tab_border"></div>
 	</div>
 
-	<div class="row panel-collapse collapse" id="about">
-		<div class="col-xs-12 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2 panel-body" >
+	<div class="row content-section" id="about">
+		<div class="col-xs-12 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2" >
 
 					<h1 class="light">About</h1>
 					<div class="row ">
@@ -254,7 +254,7 @@
 	<div class="row tab_divider">
 		<div class="col-xs-2 col-md-3 tab_border"></div>
 		<div class="col-xs-8 col-md-6  center_tab">
-			<a data-toggle="collapse" data-parent="#accordian" href="#about">
+			<a href="#about" class="content-anchor">
 				<h3>about</h3>
 			</a>
 		</div>
