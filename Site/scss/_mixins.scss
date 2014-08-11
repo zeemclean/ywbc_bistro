@@ -18,6 +18,17 @@
   }
 }
 
+
+@mixin textTreatment($color, $font-weight) {
+  color: $color;
+  font-weight: $font-weight;
+
+}
+
+
+
+
+
 @mixin transition($property, $duration, $ease, $delay) {
   -webkit-transition: $property $duration $ease $delay;
   -moz-transition: $property $duration $ease $delay;

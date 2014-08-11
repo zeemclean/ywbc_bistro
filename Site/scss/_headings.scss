@@ -11,6 +11,7 @@ h1 {
 
 	@include respond($tablet) {
 		text-align: left;
+
 	}
 
 	&.menu {
@@ -85,6 +86,7 @@ h5 {
 }
 
 .light {
+
 	color: $ash;
 }
 
@@ -115,5 +117,21 @@ p {
 
 a.content-anchor {
 	text-decoration: none;
+}
+
+a h3{
+		@include transition(all, .2s, ease-in-out, 0);
+
+	&:hover {
+		color: $ash;
+		letter-spacing: 0.5em;
+		border-color: $ash;
+	}	
+}
+
+h3.welcome {
+	@include respond($cell){
+	font-size: 1em;
+	}
 }
 

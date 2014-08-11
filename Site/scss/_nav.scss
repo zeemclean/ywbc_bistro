@@ -8,8 +8,10 @@ header {
 
 .logo_container {
 	padding-top: 3em;
-	@include bgpattern($escher);
+	
 }
+
+
 
 .header_logo {
   	width:100%;
@@ -25,6 +27,17 @@ header {
 	@include respond($desktop){
 		display:inline-block;
 			float: left;
+	}
+}
+
+.desktop-anchor {
+	text-decoration: none;
+	@include transition(all, 0.5s, ease-in-out, 0);
+		&:hover {
+		color:$ash;
+		text-decoration: none;
+		
+
 	}
 }
 

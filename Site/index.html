@@ -3,18 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Yellow Rabbit : Bistro & Lounge Bar</title>
+	<!-- jquery -->
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<!-- bootstrap javascript -->
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- main javascript -->
 	<script type="text/javascript" src="js/main.js"></script>
+	<!-- bootstrap css -->
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
 <header>
-	<div class="row">
-		<div class="logo_container col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5">
-			<a href="#home">
-				<img class="header_logo img-responsive" src="assets/yr_logo_desktop.png" alt="">
+	<div class="row photo_header">
+		<div class="logo_container col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5">
+			<a href="#home" class="desktop-anchor">
+				<img class="header_logo" src="assets/yr_logo_desktop.png" alt="">
 			</a>
 		</div>
 	</div>
@@ -22,12 +28,11 @@
 		<div class="col-xs-2 col-md-3 tab_border"></div>
 		<div class="center_tab col-xs-8 col-md-6">
 			<h3 class="hidden-md hidden-lg">Bistro & lounge</h3>
-			<nav id="tab_nav" class="hidden-sm hidden-xs">
-				<div class="nav_item col-xs-12 col-md-2"><a class="content-anchor" href="#home">Home</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a class="content-anchor" href="#menu">Menu</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a class="content-anchor" href="#events">Events</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a class="content-anchor" href="#about">About</a></div>
-				<div class="nav_item col-xs-12 col-md-2"><a class="content-anchor" href="#contact">Contact</a></div>
+			<nav id="tab_nav" class="row hidden-sm hidden-xs">
+				<div class="nav_item col-md-3"><a class="desktop-anchor" href="#home"><h3>Home</h3></a></div>
+				<div class="nav_item col-md-3"><a class="desktop-anchor" href="#menu"><h3>Menu</h3></a></div>
+				<div class="nav_item col-md-3"><a class="desktop-anchor" href="#about"><h3>About</h3></a></div>
+				<div class="nav_item col-md-3"><a class="desktop-anchor" href="#contact"><h3>Contact</h3></a></div>
 			</nav>
 		</div>
 		<div class="col-xs-2 col-md-3 tab_border"></div>
@@ -36,13 +41,67 @@
 <div class="container" >
 
 	<div class="row content-section" id="home">
-		<div class="col-xs-6 col-xs-offset-3 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2 " >
 
-					<h1 class="light">Welcome</h1>
+			<div class="col-xs-6 col-xs-offset-3 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2" >
+	
+				<div class="row hidden-xs ">
+						<div class="col-md-10 col-md-offset-1 carousel slide" id="homeCarousel" data-ride="carousel" data-interval="5000" direction="right">
+							<ol class="carousel-indicators">
+								<li class="active" data-target="#homeCarousel" data-slide-to="0"></li>
+								<li data-target="#homeCarousel" data-slide-to="1"></li>
+								<li data-target="#homeCarousel" data-slide-to="2"></li>
+								<li data-target="#homeCarousel" data-slide-to="3"></li>
+								<li data-target="#homeCarousel" data-slide-to="4"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="active item">
+									<img src="http://lorempixel.com/750/350/nightlife/7" alt="">
+									<div class="carousel-caption">
+										<h1>Mixology</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="http://lorempixel.com/750/350/nightlife/6" alt="">
+									<div class="carousel-caption">
+										<h1>Wide Selection</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="http://lorempixel.com/750/350/nightlife/3" alt="">
+									<div class="carousel-caption">
+										<h1>Open Late</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="http://lorempixel.com/750/350/nightlife/4" alt="">
+									<div class="carousel-caption">
+										<h1>Prime Location</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="http://lorempixel.com/750/350/nightlife/5" alt="">
+									<div class="carousel-caption">
+										<h1>Live Entertainment</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+
+			<div class="col-md-8 col-md-offset-2  col-xs-12 borderquote" >
+					<h1 class="light welcome">Welcome</h1>
 					<p class="welcome light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 					 Eius accusantium deserunt iure minima optio sequi vero, dignissimos sunt temporibus voluptatibus.
 					  Illo atque recusandae corrupti voluptatum culpa, incidunt debitis adipisci deserunt.</p>
-					<div id="contacthours">
+
+					
+
+					<div id="contacthours" class="hidden-md hidden-lg">
 						<h2>Hours</h2>
 						<h5>Tuesday - Thursday</h5>
 						<p>5:00 pm - 11:00pm</p>
@@ -56,10 +115,12 @@
 						<p>Address : 57 Calgary Street, 
 							Te Aro, Wellington.</p>
 					</div>
-		</div>
+				</div>
+			</div>
+		
 	</div>
 
-	<div class="row tab_divider">
+	<div class="row tab_divider hidden-md hidden-lg">
 		<div class="col-xs-2 col-md-3 tab_border"></div>
 		<div class="col-xs-8 col-md-6 center_tab"><a href="#home" class="content-anchor"><h3>home</h3></a></div>
 		<div class="col-xs-2 col-md-3  tab_border"></div>
@@ -205,12 +266,13 @@
 							<h5 class="menu">14</h5>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="row tab_divider">
+	<div class="row tab_divider hidden-md hidden-lg">
 		<div class="col-xs-2 col-md-3 tab_border"></div>
 		<div class="col-xs-8 col-md-6  center_tab">
 			<a href="#menu" class="content-anchor">
@@ -222,8 +284,12 @@
 
 	<div class="row content-section" id="about">
 		<div class="col-xs-12 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2" >
-
-					<h1 class="light">About</h1>
+					<div class="row">
+						<div class="col-xs-8 col-xs-offset-2">
+							<h1 class="light">About</h1>
+						</div>
+					</div>
+					
 					<div class="row ">
 						<div class="col-xs-1 col-xs-offset-2"></div>
 						<div class="col-xs-6 borderquote">
@@ -251,7 +317,7 @@
 		</div>
 	</div>
 
-	<div class="row tab_divider">
+	<div class="row tab_divider hidden-md hidden-lg">
 		<div class="col-xs-2 col-md-3 tab_border"></div>
 		<div class="col-xs-8 col-md-6  center_tab">
 			<a href="#about" class="content-anchor">
@@ -260,8 +326,42 @@
 		</div>
 		<div class="col-xs-2 col-md-3  tab_border"></div>
 	</div>
+
+	<div class="row content-section" id="contact">
+		<div class="col-xs-12 col-md-8 col-md-offset-2 div col-lg-8 col-lg-offset-2" >
+			
+				
+				<div id="contacthours" class="col-xs-8 col-xs-offset-2">
+				<h1 class="light">Contact</h1>	
+					<h2>Hours</h2>
+					<h5>Tuesday - Thursday</h5>
+					<p>5:00 pm - 11:00pm</p>
+					<h5>Friday - Sunday</h5>
+					<p>4:30 pm - Late</p>
+					<h5>Monday</h5>
+					<p>Closed</p>
+					<h2>Contact</h2>
+					<h5>Phone : (04) 555 8469</h5>
+					<p>Address : 57 Calgary Street, 
+						Te Aro, Wellington.</p>
+				</div>
+		
+		</div>
+	</div>
+
+
+
 	
 </div>
+<footer class="desktop_footer hidden-sm hidden-xs">
+	<div class="row tab_divider nav_container">
+		<div class="col-xs-2 col-md-3 border_bottom"></div>
+		<div class="inverted_tab col-xs-8 col-md-6">
+
+		</div>
+		<div class="col-xs-2 col-md-3 border_bottom"></div>
+	</div>
+</footer>
 	
 </body>
 </html>

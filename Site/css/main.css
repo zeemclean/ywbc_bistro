@@ -14,7 +14,7 @@ h1 {
     text-align: left;
   }
 }
-/* line 16, ../scss/_headings.scss */
+/* line 17, ../scss/_headings.scss */
 h1.menu {
   font-family: "Josefin Slab", serif;
   text-align: left;
@@ -22,7 +22,7 @@ h1.menu {
   line-height: .5em;
 }
 
-/* line 24, ../scss/_headings.scss */
+/* line 25, ../scss/_headings.scss */
 h2 {
   font-family: "La Belle Aurore", cursive;
   color: #ffae00;
@@ -30,19 +30,19 @@ h2 {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  /* line 24, ../scss/_headings.scss */
+  /* line 25, ../scss/_headings.scss */
   h2 {
     text-align: left;
   }
 }
-/* line 34, ../scss/_headings.scss */
+/* line 35, ../scss/_headings.scss */
 h2.menu {
   color: #666;
   text-align: left;
   line-height: .1em;
 }
 
-/* line 43, ../scss/_headings.scss */
+/* line 44, ../scss/_headings.scss */
 h3 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.2em;
@@ -55,7 +55,7 @@ h3 {
   margin-top: 0;
 }
 
-/* line 59, ../scss/_headings.scss */
+/* line 60, ../scss/_headings.scss */
 h4 {
   color: #d9d9d9;
   font-family: "Josefin Slab", serif;
@@ -63,7 +63,7 @@ h4 {
   font-weight: 400;
 }
 
-/* line 66, ../scss/_headings.scss */
+/* line 67, ../scss/_headings.scss */
 h5 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.2em;
@@ -72,12 +72,12 @@ h5 {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  /* line 66, ../scss/_headings.scss */
+  /* line 67, ../scss/_headings.scss */
   h5 {
     text-align: left;
   }
 }
-/* line 77, ../scss/_headings.scss */
+/* line 78, ../scss/_headings.scss */
 h5.menu {
   font-family: "Josefin Slab", serif;
   color: #666;
@@ -85,12 +85,12 @@ h5.menu {
   text-align: left;
 }
 
-/* line 87, ../scss/_headings.scss */
+/* line 88, ../scss/_headings.scss */
 .light {
   color: #d9d9d9;
 }
 
-/* line 91, ../scss/_headings.scss */
+/* line 93, ../scss/_headings.scss */
 p {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -99,30 +99,52 @@ p {
   font-size: 1em;
 }
 @media screen and (min-width: 768px) {
-  /* line 91, ../scss/_headings.scss */
+  /* line 93, ../scss/_headings.scss */
   p {
     text-align: left;
   }
 }
-/* line 102, ../scss/_headings.scss */
+/* line 104, ../scss/_headings.scss */
 p.menu {
   text-align: left;
   color: #666;
 }
-/* line 106, ../scss/_headings.scss */
+/* line 108, ../scss/_headings.scss */
 p.quote {
   font-family: "Josefin Slab", serif;
   font-size: 1.2em;
 }
-/* line 110, ../scss/_headings.scss */
+/* line 112, ../scss/_headings.scss */
 p.cite {
   text-align: right;
   font-family: "La Belle Aurore", cursive;
 }
 
-/* line 116, ../scss/_headings.scss */
+/* line 118, ../scss/_headings.scss */
 a.content-anchor {
   text-decoration: none;
+}
+
+/* line 122, ../scss/_headings.scss */
+a h3 {
+  -webkit-transition: all 0.2s ease-in-out 0;
+  -moz-transition: all 0.2s ease-in-out 0;
+  -o-transition: all 0.2s ease-in-out 0;
+  -ms-transition: all 0.2s ease-in-out 0;
+  transition: all 0.2s ease-in-out 0;
+}
+/* line 125, ../scss/_headings.scss */
+a h3:hover {
+  color: #d9d9d9;
+  letter-spacing: 0.5em;
+  border-color: #d9d9d9;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 132, ../scss/_headings.scss */
+  h3.welcome {
+    font-size: 1em;
+  }
 }
 
 /* line 4, ../scss/_layout.scss */
@@ -131,11 +153,16 @@ body {
 }
 
 /* line 9, ../scss/_layout.scss */
+#tab_nav {
+  width: 100%;
+}
+
+/* line 13, ../scss/_layout.scss */
 .tab_divider {
   margin-top: 2em;
 }
 
-/* line 13, ../scss/_layout.scss */
+/* line 17, ../scss/_layout.scss */
 .center_tab {
   border: 0.2em solid #ffae00;
   border-top: none;
@@ -144,82 +171,102 @@ body {
   margin: none;
   box-shadow: 0em 0.5em 0.5em #222;
 }
-/* line 21, ../scss/_layout.scss */
+/* line 25, ../scss/_layout.scss */
 .center_tab.menu {
   background: url("../assets/escheresque_ste.png") repeat;
   border-radius: 0em 0em .5em .5em;
   z-index: 5;
 }
 
-/* line 28, ../scss/_layout.scss */
+/* line 35, ../scss/_layout.scss */
+.inverted_tab {
+  border: 0.2em solid #ffae00;
+  border-bottom: none;
+  z-index: 10;
+  padding: none;
+  margin: none;
+  box-shadow: 0em -0.5em 0.5em #222222;
+  min-height: 3em;
+}
+
+/* line 47, ../scss/_layout.scss */
 .tab_border {
   border-top: 0.2em solid #ffae00;
   box-shadow: 0em 0.5em 0.5em #222;
   padding-top: 0;
 }
 
-/* line 33, ../scss/_layout.scss */
+/* line 52, ../scss/_layout.scss */
+.border_bottom {
+  border-bottom: 0.2em solid #ffae00;
+  padding-top: 0;
+  min-height: 3em;
+}
+
+/* line 59, ../scss/_layout.scss */
 .paper {
   background: url("../assets/creampaper.png") repeat;
 }
 
-/* line 36, ../scss/_layout.scss */
+/* line 64, ../scss/_layout.scss */
 div.submenu {
   max-height: 500px;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-/* line 41, ../scss/_layout.scss */
+/* line 70, ../scss/_layout.scss */
 .submenu {
   display: none;
 }
 
-/* line 46, ../scss/_layout.scss */
+/* line 75, ../scss/_layout.scss */
 .content-section {
   display: none;
 }
 
-/* line 52, ../scss/_layout.scss */
+/* line 81, ../scss/_layout.scss */
 div.borderquote {
   border-left: 0.2em solid #ffae00;
   border-right: 0.2em solid #ffae00;
   margin-bottom: 3em;
+  margin-top: 1em;
 }
 
-/* line 58, ../scss/_layout.scss */
-a h3 {
-  -webkit-transition: all 2s ease-in-out 0;
-  -moz-transition: all 2s ease-in-out 0;
-  -o-transition: all 2s ease-in-out 0;
-  -ms-transition: all 2s ease-in-out 0;
-  transition: all 2s ease-in-out 0;
+@media screen and (min-width: 768px) {
+  /* line 91, ../scss/_layout.scss */
+  .onPaper {
+    background: url("../assets/creampaper.png") repeat;
+    color: #666666;
+    font-weight: 600;
+  }
 }
-/* line 61, ../scss/_layout.scss */
-a h3:hover {
-  color: #d9d9d9;
-  letter-spacing: 0.5em;
-  border-color: #d9d9d9;
+
+@media screen and (min-width: 768px) {
+  /* line 98, ../scss/_layout.scss */
+  #home {
+    display: block;
+  }
 }
 
 /* line 9, ../scss/_nav.scss */
 .logo_container {
   padding-top: 3em;
-  background: url("../assets/escheresque_ste.png") repeat;
 }
 
-/* line 14, ../scss/_nav.scss */
+/* line 16, ../scss/_nav.scss */
 .header_logo {
   width: 100%;
   height: 100%;
 }
 
-/* line 21, ../scss/_nav.scss */
+/* line 23, ../scss/_nav.scss */
 #tab_nav {
   display: none;
   margin: auto;
 }
 @media screen and (min-width: 992px) {
-  /* line 21, ../scss/_nav.scss */
+  /* line 23, ../scss/_nav.scss */
   #tab_nav {
     display: inline-block;
     float: left;
@@ -227,12 +274,27 @@ a h3:hover {
 }
 
 /* line 33, ../scss/_nav.scss */
+.desktop-anchor {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out 0;
+  -moz-transition: all 0.5s ease-in-out 0;
+  -o-transition: all 0.5s ease-in-out 0;
+  -ms-transition: all 0.5s ease-in-out 0;
+  transition: all 0.5s ease-in-out 0;
+}
+/* line 36, ../scss/_nav.scss */
+.desktop-anchor:hover {
+  color: #d9d9d9;
+  text-decoration: none;
+}
+
+/* line 46, ../scss/_nav.scss */
 a {
   color: inherit;
   text-transform: uppercase;
 }
 
-/* line 38, ../scss/_nav.scss */
+/* line 51, ../scss/_nav.scss */
 .nav_item {
   text-align: center;
   padding: 1em;

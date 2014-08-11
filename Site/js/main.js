@@ -1,10 +1,6 @@
 $(document).ready(function() {
 
-// 	$('#home').delay(1000).slideDown('slow');
-// });
 	
-
-
 	$('.drink_tab').on('click', function(event) {
 		event.preventDefault();
 
@@ -23,6 +19,27 @@ $(document).ready(function() {
 		 });
 
 	});
+
+
+	$('.desktop-anchor').on('click', function(event) {
+		event.preventDefault();
+
+		var contentId = $($(this).attr('href'));
+
+		var otherSection = $('.content-section').not(contentId);
+
+		if (otherSection.is(':visible')) {
+			otherSection.hide(function() {
+				contentId.show(); 	
+			});
+		} else {
+			contentId.show();
+		}
+	});	
+
+
+
+
 
 /* three tabs that show one content row and hide all the others 
 what i have to work with :
@@ -52,6 +69,10 @@ what i have to work with :
 		}
 		 
 	}); 
+
+
+
+  
 
 });
 
