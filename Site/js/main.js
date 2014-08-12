@@ -37,6 +37,23 @@ $(document).ready(function() {
 		}
 	});	
 
+// adding custom animations to the content-sections as they are shown or hidden 
+// 		if (otherSection.is(':visible')) {
+
+			
+// 				otherSection.addClass('hiding', function() {
+// 					contentId.show().addClass('showing', function() {
+// 						otherSection.hide().removeClass('hiding showing');
+// 					});
+// 				});	
+
+			
+// 		} else {
+// 			contentId.show().addClass('showing', function(){
+// 				otherSection.removeClass('hiding showing');
+// 			});
+// 		}
+// 	});	 
 
 
 
@@ -65,7 +82,7 @@ what i have to work with :
 			});
 			
 		} else {
-			contentId.slideToggle('slow');
+			contentId.slideDown('slow');
 		}
 		 
 	}); 

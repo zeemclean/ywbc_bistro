@@ -1,0 +1,40 @@
+@include keyframes(fadeIn) {
+	0% {
+		opacity: 0;
+
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(slideOut) {
+	0% {
+		-webkit-transform: translateX(0%);
+	}
+
+	100%{
+		-webkit-transform: translateX(200%);
+		display:none;
+
+	}
+}
+
+@include keyframes(slideIn) {
+	0% {
+		display:inline-block;
+		-webkit-transform: translateX(-100%)
+	}
+	100%{
+		-webkit-transform: translateX(0);
+	}
+}
+
+.hiding { 
+	@include animation(slideOut, 1s, ease-in, 0);
+}
+
+.showing {
+  	@include animation(slideIn, 1s, ease-in-out, 0);
+}

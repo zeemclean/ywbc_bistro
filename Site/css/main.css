@@ -158,11 +158,16 @@ body {
 }
 
 /* line 13, ../scss/_layout.scss */
-.tab_divider {
-  margin-top: 2em;
+.top_tab {
+  margin-top: -0.15em;
 }
 
 /* line 17, ../scss/_layout.scss */
+.tab_divider {
+  margin-top: 1em;
+}
+
+/* line 21, ../scss/_layout.scss */
 .center_tab {
   border: 0.2em solid #ffae00;
   border-top: none;
@@ -170,15 +175,16 @@ body {
   padding: none;
   margin: none;
   box-shadow: 0em 0.5em 0.5em #222;
+  background: url("../assets/escheresque_ste.png") repeat;
 }
-/* line 25, ../scss/_layout.scss */
+/* line 30, ../scss/_layout.scss */
 .center_tab.menu {
   background: url("../assets/escheresque_ste.png") repeat;
   border-radius: 0em 0em .5em .5em;
   z-index: 5;
 }
 
-/* line 35, ../scss/_layout.scss */
+/* line 40, ../scss/_layout.scss */
 .inverted_tab {
   border: 0.2em solid #ffae00;
   border-bottom: none;
@@ -187,45 +193,47 @@ body {
   margin: none;
   box-shadow: 0em -0.5em 0.5em #222222;
   min-height: 3em;
+  background: url("../assets/escheresque_ste.png") repeat;
+  margin-bottom: -0.15;
 }
 
-/* line 47, ../scss/_layout.scss */
+/* line 54, ../scss/_layout.scss */
 .tab_border {
   border-top: 0.2em solid #ffae00;
   box-shadow: 0em 0.5em 0.5em #222;
   padding-top: 0;
 }
 
-/* line 52, ../scss/_layout.scss */
+/* line 59, ../scss/_layout.scss */
 .border_bottom {
   border-bottom: 0.2em solid #ffae00;
   padding-top: 0;
   min-height: 3em;
 }
 
-/* line 59, ../scss/_layout.scss */
+/* line 66, ../scss/_layout.scss */
 .paper {
   background: url("../assets/creampaper.png") repeat;
 }
 
-/* line 64, ../scss/_layout.scss */
+/* line 71, ../scss/_layout.scss */
 div.submenu {
   max-height: 500px;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-/* line 70, ../scss/_layout.scss */
+/* line 77, ../scss/_layout.scss */
 .submenu {
   display: none;
 }
 
-/* line 75, ../scss/_layout.scss */
+/* line 82, ../scss/_layout.scss */
 .content-section {
   display: none;
 }
 
-/* line 81, ../scss/_layout.scss */
+/* line 88, ../scss/_layout.scss */
 div.borderquote {
   border-left: 0.2em solid #ffae00;
   border-right: 0.2em solid #ffae00;
@@ -234,7 +242,7 @@ div.borderquote {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 91, ../scss/_layout.scss */
+  /* line 98, ../scss/_layout.scss */
   .onPaper {
     background: url("../assets/creampaper.png") repeat;
     color: #666666;
@@ -243,37 +251,42 @@ div.borderquote {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 98, ../scss/_layout.scss */
+  /* line 105, ../scss/_layout.scss */
   #home {
     display: block;
   }
 }
 
-/* line 9, ../scss/_nav.scss */
+/* line 4, ../scss/_nav.scss */
+header {
+  padding-bottom: 2em;
+}
+
+/* line 10, ../scss/_nav.scss */
 .logo_container {
   padding-top: 3em;
 }
 
-/* line 16, ../scss/_nav.scss */
+/* line 17, ../scss/_nav.scss */
 .header_logo {
   width: 100%;
   height: 100%;
 }
 
-/* line 23, ../scss/_nav.scss */
+/* line 24, ../scss/_nav.scss */
 #tab_nav {
   display: none;
   margin: auto;
 }
 @media screen and (min-width: 992px) {
-  /* line 23, ../scss/_nav.scss */
+  /* line 24, ../scss/_nav.scss */
   #tab_nav {
     display: inline-block;
     float: left;
   }
 }
 
-/* line 33, ../scss/_nav.scss */
+/* line 34, ../scss/_nav.scss */
 .desktop-anchor {
   text-decoration: none;
   -webkit-transition: all 0.5s ease-in-out 0;
@@ -282,19 +295,19 @@ div.borderquote {
   -ms-transition: all 0.5s ease-in-out 0;
   transition: all 0.5s ease-in-out 0;
 }
-/* line 36, ../scss/_nav.scss */
+/* line 37, ../scss/_nav.scss */
 .desktop-anchor:hover {
   color: #d9d9d9;
   text-decoration: none;
 }
 
-/* line 46, ../scss/_nav.scss */
+/* line 47, ../scss/_nav.scss */
 a {
   color: inherit;
   text-transform: uppercase;
 }
 
-/* line 51, ../scss/_nav.scss */
+/* line 52, ../scss/_nav.scss */
 .nav_item {
   text-align: center;
   padding: 1em;
